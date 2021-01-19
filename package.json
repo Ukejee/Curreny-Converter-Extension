@@ -1,0 +1,25 @@
+{
+  "name": "currency-converter-browser-extension",
+  "version": "1.0.0",
+  "description": "A browser extension for converting amounts in one currency to another given currency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [
+    "chrome extension",
+    "edge extension",
+    "currency converter"
+  ],
+  "author": "Emeka Ukeje",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

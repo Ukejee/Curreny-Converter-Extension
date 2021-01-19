@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Currency Converter</title>
+		<link rel="stylesheet" href="./style.css" />
+    </head>
+    <body class="container">
+        <div id="line"></div>
+       
+        <div>
+			<h1>Currency Converter</h1>
+        </div>
+        
+        <!--exchange rate area-->
+        <div>
+            <h2>Exchange Rate</h2>
+            <p id="exchanged-value"> </p>
+        </div>
+
+        <!--converted amount area-->
+        <!-- <div>
+            <h2>Converted Amount</h2>
+            <p>$27.77</p>
+        </div> -->
+
+        <form>
+            <label for="famount">Amount</label>
+            <input type="number" required id="famount" name="amount"/>
+
+            <div id="drop-down-layout">
+                <div id="from-drop-down">
+                    <label for="from-items">From</label>
+                    <div  class="custom-select">
+                        <select class="from-items">
+                            <option value="item-1">Select Currency</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="to-drop-down">
+                    <label for="to-items" id="to-text">To</label>
+                    <select class="to-items">
+                        <option value="item-1">Select Currency</option>
+                      </select>
+                </div>
+                
+            </div>
+            <input type="button" id="convert-btn" value="CONVERT"/>
+        </form>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
